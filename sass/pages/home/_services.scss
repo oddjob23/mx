@@ -1,0 +1,28 @@
+.services {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 0 0 20px;
+    .service_item {
+        background: rgba(0, 0, 0, 0) url('../../../images/dark_bg.jpg') no-repeat scroll 0 0 / cover;
+        padding: 0 0 20px;
+        img {
+            padding: 40px 0 25px;
+
+        }
+        h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            transition: all 0.5s ease;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+        
+    }
+} 
