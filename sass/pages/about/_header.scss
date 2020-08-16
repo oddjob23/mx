@@ -1,0 +1,65 @@
+.header-about {
+    .logo {
+        padding: 0;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        display: block;
+        a {
+            span {
+                font-size: 22px;
+                font-weight: bold;
+                &:first-child {
+                    letter-spacing: 2px;
+                    margin-right: 12px;
+                }
+                &.xxl {
+                    margin-left: 12px;
+                    letter-spacing: 2px
+                }
+            }
+        }
+    }
+
+}
+.social-icons {
+    li {
+        &:not(:first-child) {
+            padding-left: 15px;
+        }
+        a:link,
+        a:visited {
+            font-size: 16px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        &:hover {
+            &.facebook {
+                a {
+                    background-color: $primary;
+                    color: #fff;
+                }
+            }
+            &.gmail {
+                a {
+                    background-color: $link-hover;
+                    color: #fff;
+
+                }
+            }
+            &.phone {
+                a {
+                    background-color: $success;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
