@@ -89,3 +89,18 @@ body {
 .featured-area {
     padding-top: 55px
 }
+
+
+.md-margin-2 {
+    @media (min-width: 768px) and (max-width: 998px) {
+        margin-top: 20px;
+    }
+}
+.sm-margin-4 {
+    @media (min-width: 425px) and (max-width: 768px) {
+        margin-top: 40px;
+        .image-container-one {
+            background-position-y: -120px;
+        }
+    }
+}

@@ -66,6 +66,20 @@
                 }
             }
         }
+        @media (max-width: 768px) {
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    li {
+                        padding: 0;
+                    }
+                }
+
+            }
+        }
     }
 
     .item {

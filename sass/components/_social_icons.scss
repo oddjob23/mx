@@ -1,0 +1,44 @@
+.social_icons {
+    li {
+        padding-right: 25px;
+        a {
+            display: flex;
+            border: 1px solid #eee;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            line-height: 32px;
+   
+            i {
+                font-size: 18px;
+                
+            }
+        }
+        &.facebook {
+            &:hover {
+                a {
+                    background-color: $primary;
+                    color: #fff;
+                }
+            }
+        }
+        &.gmail {
+            &:hover {
+                a {
+                    background-color: $danger;
+                    color: #fff;
+                }
+            }
+        }
+        &.phone {
+            &:hover {
+                a {
+                    background-color: $success;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+} 

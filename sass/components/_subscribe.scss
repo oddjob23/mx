@@ -2,12 +2,52 @@
 
 .subscribe-section {
     background-color: #313961;
-    height: 60px;
+    padding: 25px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     p {
         padding: 25px 0;
+    }
+    form {
+        .form-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input {
+                max-width: 580px;
+                position: relative;
+            }
+            button {
+                position: absolute;
+                
+                top: 0;
+
+
+                @media (max-width: 1199px) {
+                    right: 170px;
+                }
+
+                @media (max-width: 992px) {
+                    right: 170px;
+                }
+                @media (max-width: 768px) {
+                    right: 0;
+                }
+                @media (max-width: 425px) {
+                    right: 0;
+                }
+                @media (min-width: 1200px) {
+                    right: calc(528px / 2);
+                }
+
+
+                
+            }
+            
+        }
+
     }
 } 

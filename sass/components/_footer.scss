@@ -1,0 +1,159 @@
+.footer {
+    background-color: $dark-footer;
+
+    .footer-top-bar {
+        padding-bottom: 45px;
+        .logo {
+            display: block;
+            a {
+                span{
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    
+                }
+                img.footer-logo {
+                    margin: 0 12px;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                  
+                }
+                span:nth-child(3) {
+                    color: #fff;
+                }
+            }
+            p {
+                padding-top: 25px;
+            }
+            hr {
+                background: #fff;
+                width: 75%;
+                margin: 0 auto;
+                opacity: 0.3;
+            }
+        }
+
+        .contact_info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                padding-top: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+                text-align: center;
+            }
+            a {
+                color: #fff;
+                font-size: 18px;
+                line-height: 32px;
+                border: 2px solid $dark-border;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &.phone:hover {
+                    background-color: $success;
+                }
+                &.location:hover {
+                    background-color: $primary;
+                }
+                &.gmail:hover {
+                    background-color: $danger;
+                }
+            }
+            
+        }
+    }
+    .footer-mid-bar {
+        border-top: 1px solid $dark-border;
+        border-bottom: 1px solid $dark-border;
+        padding: 50px 0;
+        h4 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+        .footer-menu {
+            padding: 5px 0;
+            a:link,
+            a:visited {
+                color: #ddd;
+                font-size: 14px;
+                text-transform: capitalize;
+                font-weight: 400;
+                transition: all 0.5s ease 0s;
+                &:hover {
+                    color: $link-hover;
+                }
+            }
+        }
+        form {
+            input {
+                background:rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                border: 2px solid $input-dark-border;
+                border-radius: 20px;
+                padding: 11px 110px 11px 15px;
+                transition: border .2s ease;
+                &::placeholder {
+                    font-size: 13px;
+                    color: $placeholder-color;
+                    font-weight: 400;
+                }
+                &:focus {
+                    outline: none;
+                    border-color: $danger;
+                }
+                color: #fff;
+                
+            }
+            button[type="submit"] {
+                background: transparent;
+                border: none;
+                outline: none;
+                i {
+                    color: $dark-footer;
+                    background: #fff;
+                    border-radius: 50%;
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    padding-top: 14px;
+                    
+                    transition: all 0.5s ease 0s;
+                }
+                &:hover {
+                    i {
+                        background: $danger;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+        h4.social-heading {
+            padding-top: 30px;
+            padding-bottom: 5px;
+        }
+    }
+    @media (max-width: 425px) {
+        text-align: center;
+        .col-sm-6 {
+            margin-bottom: 20px;
+        }
+        form {
+            margin: 20px 0;
+            input {
+                width: 80%;
+            }
+        }
+    }
+}

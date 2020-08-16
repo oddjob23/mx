@@ -13,22 +13,39 @@
       "<i class='fa fa-long-arrow-left'></i>",
       "<i class='fa fa-long-arrow-right'></i>",
     ],
-    itemsDesktop: [1199, 4],
-    itemsDesktopSmall: [979, 3],
-    itemsTablet: [767, 1],
-    itemsMobile: [480, 1],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      425: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+    },
   });
+  if ($(window).width < 425) {
+  }
   $(".testimonial-carousel").owlCarousel({
     items: 1,
     loop: true,
     navigation: false,
     responsiveClass: true,
-    autoPlay: false,
+    autoPlay: true,
     slideSpeed: 2000,
     itemsDesktop: [1199, 1],
     itemsDesktopSmall: [979, 1],
     itemsTablet: [768, 1],
     itemsMobile: [480, 1],
+  });
+  $(".phone-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    navigation: false,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayHoverPause: true,
   });
   $("#noviteti").addClass("active");
 
@@ -39,5 +56,29 @@
         $(el).removeClass("active");
       });
     $(this).addClass("active");
+  });
+
+  var plusIcon = `<svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+  <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+</svg>`;
+  var minusIcon = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+</svg>`;
+  $(".mean-expand").html(plusIcon);
+
+  $("#toggle-menu").click(function (e) {
+    console.log("clicked");
+    $(".mobile-menu").toggleClass("show");
+  });
+  $(".mean-expand").click(function (e) {
+    $(this).toggleClass("clicked");
+    if ($(this).hasClass("clicked")) {
+      $(this).html(minusIcon);
+    } else {
+      console.log($(this).hasClass("clicked"));
+      $(this).html(plusIcon);
+    }
+    $(this).parent().find("ul").toggleClass("d-none");
   });
 })(jQuery);

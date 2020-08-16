@@ -36,5 +36,25 @@
             font-style: italic;
         }
     }
-
+    @media (min-width: 768px) and (max-width: 998px) {
+        .client_testimonial {
+            p {
+                padding: 0 60px
+            }
+        }
+    }
+    @media (min-width: 425px) and (max-width: 764px) {
+        .client_testimonial {
+            p {
+                padding: 0 30px;
+            }
+        }
+    }
+    @media (max-width: 425px) {
+        .client_testimonial {
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
 } 

@@ -6,12 +6,18 @@
         max-height: 475px;
         height: 474px;
     }
-    max-height: 500px;
     &--right {
         .image-container {
     
             margin-bottom: 28px;
             position: relative;
+            @media (max-width: 425px) {
+                height: 220px;
+                display: flex;
+                align-items: flex-end;
+                position: relative
+
+            }
 
              a.img-link {
                 &::before {
@@ -42,6 +48,29 @@
                 width: 100%;
             }
         }
+        .image-container-three {
+            background-image: url('../../../images/majice_3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 140px;
+
+        }
+        .image-container-two {
+            background-image: url('../../../images/kosulje_5.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 140px;
+            background-position-y: -55px;
+
+        }
+        .image-container-one {
+            background-image: url('../../../images/novitet_1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 140px;
+            //background-position-y: -55px;
+
+        }
         .slider-text { 
             position: absolute;
             left: 0;
@@ -49,7 +78,11 @@
             text-align: center;
             top: 60%;
             color: #fff;
-            z-index: 20s;
+            z-index: 20;
+            @media (max-width: 425px) {
+                margin-top: 20px;
+          
+            }
             h4 {
                 font-size: 18px;
                 font-weight: 600;
@@ -58,5 +91,10 @@
         }
     } 
 
+    @media (max-width: 425px) {
+        img {
+            height: 380px;
+        }
+    }
     
 } 
