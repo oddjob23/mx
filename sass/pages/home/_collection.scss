@@ -1,5 +1,12 @@
 .collection {
     margin: 60px 0;
+    .row {
+        .col-md-4 {
+            @media (max-width: 768px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
     .section_title {
         padding-bottom: 45px;
     }

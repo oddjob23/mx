@@ -10339,6 +10339,9 @@ body {
 
 .collection {
   margin: 60px 0; }
+  @media (max-width: 768px) {
+    .collection .row .col-md-4 {
+      margin-bottom: 20px; } }
   .collection .section_title {
     padding-bottom: 45px; }
   .collection .card-one {
@@ -10546,7 +10549,8 @@ body {
         transition: all 0.5s ease 0s; }
         .footer .footer-mid-bar .footer-menu a:link:hover,
         .footer .footer-mid-bar .footer-menu a:visited:hover {
-          color: #C43B68; }
+          color: #C43B68;
+          margin-left: 8px; }
     .footer .footer-mid-bar form input {
       background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
       border: 2px solid #373737;
@@ -10592,7 +10596,7 @@ body {
 
 .header-about .logo {
   padding: 0;
-  display: block; }
+  display: flex; }
   @media (max-width: 768px) {
     .header-about .logo {
       display: none; } }
@@ -10602,9 +10606,20 @@ body {
     .header-about .logo a span:first-child {
       letter-spacing: 2px;
       margin-right: 12px; }
+      @media (max-width: 1024px) {
+        .header-about .logo a span:first-child {
+          letter-spacing: 0; } }
     .header-about .logo a span.xxl {
       margin-left: 12px;
       letter-spacing: 2px; }
+
+@media (max-width: 425px) {
+  .social-icons {
+    justify-content: center; } }
+
+@media (max-width: 992px) {
+  .social-icons {
+    margin: 12px 0; } }
 
 .social-icons li:not(:first-child) {
   padding-left: 15px; }
@@ -10649,6 +10664,9 @@ body {
 
 .ko {
   padding-top: 80px; }
+  @media (max-width: 768px) {
+    .ko .container .row .col-lg-7 {
+      margin-bottom: 30px; } }
   .ko a.btn-read-more {
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -10661,3 +10679,6 @@ body {
     transition: all 0.5s ease 0s;
     margin-top: 10px;
     font-family: "Raleway",sans-serif; }
+    .ko a.btn-read-more:hover {
+      background: #C43B68;
+      color: #fff; }

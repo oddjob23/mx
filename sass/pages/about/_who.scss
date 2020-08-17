@@ -1,5 +1,14 @@
 .ko {
     padding-top: 80px;
+    .container {
+        .row {
+            .col-lg-7 {
+                @media (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
     a.btn-read-more {
         border: 1px solid #ddd;
         border-radius: 20px;
