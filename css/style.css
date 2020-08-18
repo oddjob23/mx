@@ -10682,3 +10682,89 @@ body {
     .ko a.btn-read-more:hover {
       background: #C43B68;
       color: #fff; }
+
+.address {
+  background: #F8F8F8;
+  padding-bottom: 65px;
+  margin-right: 100px;
+  margin-bottom: 40px; }
+  @media (max-width: 768px) {
+    .address {
+      margin-right: 0px; } }
+  .address .address_contact_info {
+    padding-top: 40px; }
+    .address .address_contact_info .owl-dots {
+      display: none; }
+    .address .address_contact_info .contact_icon {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .address .address_contact_info .contact_icon span {
+        border: 2px solid #ddd;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        line-height: 45px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+        background: #fff;
+        align-self: center;
+        cursor: pointer; }
+        .address .address_contact_info .contact_icon span svg {
+          width: 20px;
+          height: 20px;
+          transition: all 0.2s ease; }
+      .address .address_contact_info .contact_icon:hover span.location {
+        background-color: #007bff; }
+        .address .address_contact_info .contact_icon:hover span.location svg {
+          fill: #fff; }
+      .address .address_contact_info .contact_icon:hover span.phone {
+        background-color: #28a745; }
+        .address .address_contact_info .contact_icon:hover span.phone svg {
+          fill: #fff; }
+      .address .address_contact_info .contact_icon:hover span.gmail {
+        background-color: #dc3545; }
+        .address .address_contact_info .contact_icon:hover span.gmail svg {
+          fill: #fff; }
+    .address .address_contact_info p {
+      font-size: 13px;
+      color: #252525;
+      letter-spacing: 2px;
+      margin-bottom: 0px; }
+    .address .address_contact_info .email-text {
+      color: #C43B68; }
+
+.form-container {
+  margin-bottom: 35px; }
+
+.form-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #252525;
+  text-transform: uppercase;
+  margin-bottom: 45px; }
+
+.form input {
+  margin-top: 20px !important;
+  border: 1px solid #ddd;
+  height: 35px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%; }
+
+.form textarea {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding-left: 10px;
+  margin-top: 20px; }
+
+.map {
+  margin-bottom: 55px;
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */ }
+
+.page-heading {
+  margin-bottom: 50px; }

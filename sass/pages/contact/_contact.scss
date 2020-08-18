@@ -1,0 +1,108 @@
+.address {
+    background: #F8F8F8;
+    padding-bottom: 65px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    @media (max-width: 768px){ 
+        margin-right: 0px;
+    }
+    .address_contact_info {
+        padding-top: 40px;
+        .owl-dots {
+            display: none;
+        }
+        .contact_icon {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            span {
+                border: 2px solid #ddd;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                line-height: 45px;
+                text-align: center;
+                display: inline-block;
+                margin-bottom: 20px;
+                background: #fff;
+                align-self: center;
+                cursor: pointer;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    transition: all 0.2s ease;
+                }
+            }
+            
+            &:hover {
+                span.location {
+                    background-color: $primary;
+                    svg {
+                        fill: #fff;
+                    }
+                } 
+                
+                span.phone {
+                    background-color: $success;
+                    svg {
+                        fill: #fff;
+                    }
+                }
+                span.gmail {
+                        background-color: $danger;
+                        svg {
+                            fill: #fff;
+                        }
+                    } 
+                
+                
+            }
+            
+        }
+        p {
+            font-size: 13px;
+            color: #252525;
+            letter-spacing: 2px;
+            margin-bottom: 0px;
+        }
+        .email-text {
+            color: $link-hover;
+        }
+    } 
+}
+.form-container {
+    margin-bottom: 35px;
+}
+.form-header {
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #252525;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+}
+.form {
+    input {
+        margin-top: 20px !important;
+        border: 1px solid #ddd;
+        height: 35px;
+        margin-top: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+    textarea {
+        border: 1px solid #ddd;
+        width: 100%;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+}
+.map {
+    margin-bottom: 55px;
+    height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+}
+.page-heading {
+    margin-bottom: 50px;
+}
