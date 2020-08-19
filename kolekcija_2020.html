@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksim XXL - Kolekcija 2020</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/55231f72d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header header-about">
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-lg-3 col-md-9 d-flex">
+                    <div class="logo">
+                        <a href="index.html">
+                            <span>MAKSIM</span>
+                            <img src="images/maksimlogo.png" />
+                            <span class="xxl">XXL</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- links -->
+                <div class="col-lg-7 col-md-7 d-none d-lg-block">
+                    <div class="mainmenu nav navbar-collapse  navbar-right">
+                        <nav>
+                            <ul class="navbar-nav" id="nav">
+                                <li><a href="index.html">Pocetna</a></li>
+                                <li class="active"><a href="#">Kolekcije</a></li>
+                                <li><a href="about.html">O Nama</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- links end -->
+
+                <!-- social icons -->
+                <div class="col-lg-2 col-md-3 d-flex align-items-center justify-content-center justify-content-md-end">
+                    <ul class="social-icons d-flex justify-content-between">
+                        <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="gmail"><a target="_blank" href="#"><i class="far fa-envelope"></i></a></li>
+                        <li class="phone"><a target="_blank" href="#"><i class="fas fa-phone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu-area">
+            <div class="container mean-container">
+                <div class="mean-bar">
+                    <a href="#nav" class="meanmenu-reveal" id="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown" class="mean-nav">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Pocetna</a>
+                                        <ul class="d-none sub-menu-mobile fadeIn">
+                                            <li><a href="#">Sta vam Maksim nudi?</a></li>
+                                            <li><a href="#">Koje su sve pogodnosti?</a></li>
+                                            <li><a href="#">Sta kazu o nama?</a></li>
+                                            <li><a href="#">Nasi predlozi</a></li>
+                                        </ul>
+                                        <button class="mean-expand" href="#">
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="kolekcije.html">Kolekcije</a>
+
+                                        <ul class="d-none sub-menu-mobile fadeIn">
+                                            <li><a href="#">Leto 2020</a></li>
+                                            <li><a href="#">Kolekcija 2020</a></li>
+                                            <li><a href="#">Kolekcija 2019</a></li>
+                                            <li><a href="#">Kolekcija 2018</a></li>
+                                        </ul>
+                                        <button class="mean-expand" href="#"></button>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">O Nama</a>
+                                    </li>
+                                    <li>
+                                        <a href="kontakt.html">Kontakt</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page_title">
+                        <h1>Maksim Kolekcija 2020</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="mixit_menu text-center ">
+                        <ul>
+                            <li class="filter active" data-filter="all">Sve</li>
+                            <li class="filter" data-filter=".majice">Majice</li>
+                            <li class="filter" data-filter=".kosulje">Kosulje</li>
+                            <li class="filter" data-filter=".pantalone">Pantalone</li>
+                            <li class="filter" data-filter=".sortsevi">Sortsevi</li>
+                            <li class="filter" data-filter=".bermude">Bermude</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="blueimp-gallery" class="blueimp-gallery" aria-label="image gallery" aria-modal="true"
+                    role="dialog">
+                    <div class="slides" aria-live="polite"></div>
+                    <h3 class="title">Test title</h3>
+                    <a class="prev" aria-controls="blueimp-gallery" aria-label="previous slide"
+                        aria-keyshortcuts="ArrowLeft"></a>
+                    <a class="next" aria-controls="blueimp-gallery" aria-label="next slide"
+                        aria-keyshortcuts="ArrowRight"></a>
+                    <a class="close" aria-controls="blueimp-gallery" aria-label="close" aria-keyshortcuts="Escape"></a>
+                    <a class="play-pause" aria-controls="blueimp-gallery" aria-label="play slideshow"
+                        aria-keyshortcuts="Space" aria-pressed="false" role="button"></a>
+                    <ol class="indicator"></ol>
+                </div>
+                <div id="links">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/majice_3.png" title="Banana">
+                                    <img src="images/majice_3.png" alt="Banana" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/majice_4.png" title="Apple">
+                                    <img src="images/majice_4.png" alt="Apple" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/kosulje_3.png" title="Orange">
+                                    <img src="images/kosulje_3.png" alt="Orange" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/kosulje_5.png" title="Orange">
+                                    <img src="images/kosulje_5.png" alt="Orange" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 2nd row -->
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/majice_3.png" title="Banana">
+                                    <img src="images/majice_3.png" alt="Banana" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/majice_4.png" title="Apple">
+                                    <img src="images/majice_4.png" alt="Apple" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/kosulje_3.png" title="Orange">
+                                    <img src="images/kosulje_3.png" alt="Orange" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/kosulje_5.png" title="Orange">
+                                    <img src="images/kosulje_5.png" alt="Orange" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end of 2nd row -->
+
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/majice_3.png" title="Banana">
+                                    <img src="images/majice_3.png" alt="Banana" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/majice_4.png" title="Apple">
+                                    <img src="images/majice_4.png" alt="Apple" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/kosulje_3.png" title="Orange">
+                                    <img src="images/kosulje_3.png" alt="Orange" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-lg-3">
+                            <div class="single-image">
+                                <a href="images/kosulje_5.png" title="Orange">
+                                    <img src="images/kosulje_5.png" alt="Orange" />
+                                </a>
+                                <div class="hover-image">
+                                    <div class="image-info">
+                                        <div class="info-icons">
+                                            <span>
+                                                <i class="fab fa-facebook-messenger"></i>
+
+                                            </span>
+                                            <span>
+                                                <i class="far fa-envelope-open"></i>
+
+                                            </span>
+                                        </div>
+                                        <p>Vise Informacija</p>
+                                        <small>Zanima vas cena, dostupnost velicina ili mozda zelite proizvod u drugoj
+                                            boji? Kliknite na jednu od ikonica i kontaktirajte nas, mi cemo vam pomoci
+                                            da napravite najbolji izbor.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="js/plugins/owl.carousel.js"></script>
+
+
+    <script src="js/plugins/jquery.blueimp-gallery.min.js"></script>
+    <script>
+        document.getElementById( 'links' ).onclick = function ( event ) {
+            event = event || window.event
+            var target = event.target || event.srcElement
+            var link = target.src ? target.parentNode : target
+            var options = { index: link, event: event }
+            var links = this.getElementsByTagName( 'a' )
+            blueimp.Gallery( links, options )
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
