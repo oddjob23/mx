@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/55231f72d7.js" crossorigin="anonymous"></script>
 </head>
@@ -129,18 +129,17 @@
                     <div class="mixit_menu text-center ">
                         <ul>
                             <li class="filter active" data-filter="all">Sve</li>
-                            <li class="filter" data-filter=".majice">Majice</li>
-                            <li class="filter" data-filter=".kosulje">Kosulje</li>
-                            <li class="filter" data-filter=".pantalone">Pantalone</li>
-                            <li class="filter" data-filter=".sortsevi">Sortsevi</li>
-                            <li class="filter" data-filter=".bermude">Bermude</li>
+                            <li class="filter" data-filter="majice">Majice</li>
+                            <li class="filter" data-filter="kosulje">Kosulje</li>
+                            <li class="filter" data-filter="pantalone">Pantalone</li>
+                            <li class="filter" data-filter="sortsevi">Sortsevi</li>
+                            <li class="filter" data-filter="bermude">Bermude</li>
                         </ul>
                     </div>
                 </div>
                 <div id="blueimp-gallery" class="blueimp-gallery" aria-label="image gallery" aria-modal="true"
                     role="dialog">
                     <div class="slides" aria-live="polite"></div>
-                    <h3 class="title">Test title</h3>
                     <a class="prev" aria-controls="blueimp-gallery" aria-label="previous slide"
                         aria-keyshortcuts="ArrowLeft"></a>
                     <a class="next" aria-controls="blueimp-gallery" aria-label="next slide"
@@ -153,7 +152,7 @@
                 <div id="links">
                     <div class="row">
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="kosulje">
                                 <a href="images/majice_3.png" title="Banana">
                                     <img src="images/majice_3.png" alt="Banana" />
                                 </a>
@@ -179,7 +178,7 @@
 
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="kosulje">
                                 <a href="images/majice_4.png" title="Apple">
                                     <img src="images/majice_4.png" alt="Apple" />
                                 </a>
@@ -205,7 +204,7 @@
 
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="kosulje">
                                 <a href="images/kosulje_3.png" title="Orange">
                                     <img src="images/kosulje_3.png" alt="Orange" />
                                 </a>
@@ -230,7 +229,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="kosulje">
                                 <a href="images/kosulje_5.png" title="Orange">
                                     <img src="images/kosulje_5.png" alt="Orange" />
                                 </a>
@@ -258,7 +257,7 @@
 
                         <!-- 2nd row -->
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="majice">
                                 <a href="images/majice_3.png" title="Banana">
                                     <img src="images/majice_3.png" alt="Banana" />
                                 </a>
@@ -284,7 +283,7 @@
 
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="majice">
                                 <a href="images/majice_4.png" title="Apple">
                                     <img src="images/majice_4.png" alt="Apple" />
                                 </a>
@@ -310,7 +309,7 @@
 
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="majice">
                                 <a href="images/kosulje_3.png" title="Orange">
                                     <img src="images/kosulje_3.png" alt="Orange" />
                                 </a>
@@ -335,7 +334,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
+                            <div class="single-image" data-title="majice">
                                 <a href="images/kosulje_5.png" title="Orange">
                                     <img src="images/kosulje_5.png" alt="Orange" />
                                 </a>
@@ -363,9 +362,9 @@
                         <!-- end of 2nd row -->
 
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
-                                <a href="images/majice_3.png" title="Banana">
-                                    <img src="images/majice_3.png" alt="Banana" />
+                            <div class="single-image" data-title="pantalone">
+                                <a href="images/pantalone_1.png" title="Banana">
+                                    <img src="images/pantalone_1.png" alt="Banana" />
                                 </a>
                                 <div class="hover-image">
                                     <div class="image-info">
@@ -389,9 +388,9 @@
 
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
-                                <a href="images/majice_4.png" title="Apple">
-                                    <img src="images/majice_4.png" alt="Apple" />
+                            <div class="single-image" data-title="pantalone">
+                                <a href="images/2020/prolece/pantalone/prolece_pantalone_01.png" title="Apple">
+                                    <img src="images/2020/prolece/pantalone/prolece_pantalone_01.png" alt="Apple" />
                                 </a>
                                 <div class="hover-image">
                                     <div class="image-info">
@@ -415,9 +414,9 @@
 
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
-                                <a href="images/kosulje_3.png" title="Orange">
-                                    <img src="images/kosulje_3.png" alt="Orange" />
+                            <div class="single-image" data-title="pantalone">
+                                <a href="images/2020/prolece/pantalone/prolece_pantalone_05.png" title="Orange">
+                                    <img src="images/2020/prolece/pantalone/prolece_pantalone_05.png" alt="Orange" />
                                 </a>
                                 <div class="hover-image">
                                     <div class="image-info">
@@ -440,9 +439,9 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-lg-3">
-                            <div class="single-image">
-                                <a href="images/kosulje_5.png" title="Orange">
-                                    <img src="images/kosulje_5.png" alt="Orange" />
+                            <div class="single-image" data-title="pantalone">
+                                <a href="images/2020/prolece/pantalone/prolece_pantalone_06.png" title="Orange">
+                                    <img src="images/2020/prolece/pantalone/prolece_pantalone_06.png" alt="Orange" />
                                 </a>
                                 <div class="hover-image">
                                     <div class="image-info">
