@@ -13,6 +13,22 @@ class Product(models.Model):
     ZIMA  = 'ZI'
     PROLECE = 'PR'
 
+    KOSULJE = 'KS'
+    MAJICE  = 'MC'
+    PANTALONE = 'PT'
+    JAKNE = 'JK'
+    SORTSEVI = 'ST'
+    AKSESOARI = 'AK'
+
+    KATEGORIJE = [
+        (KOSULJE, 'Kosulje'),
+        (SORTSEVI, 'Sortsevi'),
+        (MAJICE, 'Majice'),
+        (JAKNE, 'Jakne'),
+        (PANTALONE, 'Pantalone'),
+        (AKSESOARI, 'Aksesoari')
+    ]
+
     HERO = 'HR'
     SIDE = 'SD'
     REGULAR = 'RG'
@@ -28,6 +44,8 @@ class Product(models.Model):
         (JESEN, 'Jesen'),
     ]
     season = models.CharField(max_length=2, choices=SEZONA, default=LETO)
+
+    category = models.CharField(max_length=2, choices=KATEGORIJE, default=MAJICE)
     
     # size choice field
     # color choice field

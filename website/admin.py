@@ -4,8 +4,8 @@ from .models import Product, Season, Collection
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('title', 'season', 'date_added', 'image', 'type')
-    list_filter  = ('season',  'type', 'date_added')
+    list_display = ('title', 'season', 'date_added', 'image', 'category', 'type')
+    list_filter  = ('season',  'type', 'date_added', 'category')
   
 admin.site.register(Season)
 

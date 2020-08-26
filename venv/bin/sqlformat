@@ -1,4 +1,4 @@
-#!/Users/mkaraklajic/dev/maksim/venv/bin/python
+#!/home/zante23/dev/maksim_xxl/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

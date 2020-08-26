@@ -254,7 +254,7 @@ Maksim XXL - Samo za veliku gospodu!
                                             aria-selected="false">Kosulje</a>
                                     </li>
                                     <li role="presentation">
-                                        <a href="#majice" role="tab" data-toggle="tab" aria-selected="false">Majice</a>
+                                        <a href="#MC" role="tab" data-toggle="tab" aria-selected="false">Majice</a>
                                     </li>
                                     <li role="presentation">
                                         <a href="#sortsevi" role="tab" data-toggle="tab"
@@ -274,7 +274,7 @@ Maksim XXL - Samo za veliku gospodu!
                 <div class="item_slider owl-carousel">
                    {% for novitet in noviteti %}
                      <div class="col-12">
-                        <div class="single_item">
+                        <div class="single_item" data-category="{{novitet.category}}" id="{{novitet.category}}">
                             <div class="single-item-img">
                                 <a href="#">
                                     <img src="{{novitet.image.url}}" alt="image" />
